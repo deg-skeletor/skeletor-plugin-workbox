@@ -19,13 +19,13 @@ Type: `String`
 
 Possible Values: `'generateSW'`, `'injectManifest'`
 
-The (workbox-build)[https://developers.google.com/web/tools/workbox/modules/workbox-build] method you want to use.
+The [workbox-build](https://developers.google.com/web/tools/workbox/modules/workbox-build) method you want to use.
 
 **workboxConfig**
 
 Type: `Object`
 
-The config to be passed through to workbox-build. See their (documentation)[https://developers.google.com/web/tools/workbox/modules/workbox-build] for a guide.
+The config to be passed through to workbox-build. See their [documentation](https://developers.google.com/web/tools/workbox/modules/workbox-build) for a guide.
 
 ### Example Config
 ```
