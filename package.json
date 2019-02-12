@@ -32,9 +32,9 @@
         "workbox-build": "^3.6.3"
     },
     "jest": {
-		"testPathIgnorePatterns": [
-			"/node_modules/"
-		],
-		"testURL": "http://localhost"
-	}
+        "testPathIgnorePatterns": [
+            "/node_modules/"
+        ],
+        "testURL": "http://localhost"
+    }
 }
