@@ -1,4 +1,4 @@
-const {generateSW, injectManifest} = require('workbox-build');
+const workboxBuild = require('workbox-build');
 
 function handleError(msg, logger) {
     logger.error(msg);
@@ -14,28 +14,29 @@ function handleSuccess({count, size}, logger, swDest) {
     return {
         status: 'success',
         message: message
-    }
+    };
 }
 
 function run(config, {logger}) {
     if(Object.keys(config).length === 0) {
         return handleError('No configuration provided for Workbox plugin.', logger);
-    } else {
-        switch(config.method) {
-            case 'generateSW':
-                return generateSW(config.workboxConfig).then(resp => handleSuccess(resp, logger, config.workboxConfig.swDest));
-            case 'injectManifest':
-                return injectManifest(config.workboxConfig).then(resp => handleSuccess(resp, logger, config.workboxConfig.swDest));
-            case undefined:
-                return handleError('No workbox method defined in config.', logger);
-            default:
-                return handleError('Method not supported by workbox-build.', logger);
-        }
     }
+
+    if(!config.method) {
+        return handleError('No workbox method defined in config.', logger);
+    }
+
+    if(!workboxBuild[config.method]) {
+        return handleError('Method not supported by workbox-build.', logger);
+    }
+
+    return workboxBuild[config.method](config.workboxConfig)
+            .then(resp => handleSuccess(resp, logger, config.workboxConfig.swDest));
+
 }
 
 module.exports = function() {
     return {
         run
-    }
-}
+    };
+};
