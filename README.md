@@ -1,5 +1,5 @@
 # Skeletor Workbox Plugin
-[![Build Status](https://travis-ci.org/deg-skeletor/skeletor-plugin-workbox.svg?branch=master)](https://travis-ci.org/deg-skeletor/skeletor-plugin-workbox)
+[![Build Status](https://travis-ci.com/deg-skeletor/skeletor-plugin-workbox.svg?branch=master)](https://travis-ci.com/deg-skeletor/skeletor-plugin-workbox)
 
 The purpose of this plugin is to generate a service worker for your project. It will be an interface with [Workbox](https://rollupjs.org) for the Skeletor ecosystem. To learn more about Skeletor, [go here](https://github.com/deg-skeletor/skeletor-core).
 
