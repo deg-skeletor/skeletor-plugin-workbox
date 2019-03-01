@@ -7,6 +7,8 @@ cache:
 deploy:
   provider: npm
   email: scheul93@gmail.com
+  api_key:
+    secure: QRc0yGGKiSBXm/ySGBDhzhEghH94jz1Bu8I7xm+3DqwTqikKx0Ho53UFnli28Fds1W8826vATgtnZgRHfpBRrH3RaGEJaO002tPjsnrn2o84VgS5NEDbcFIbmc9cwdVPeW3nUuLeurUQmIPJmVu6cPIghLrUC7SldPQgwrX4YvbzbaULwmpfshgLEZZ7gP1FZRxgAb4b28ITgjv5ZCyHzlU9OX3kTO5ku/I5++GAdWrIILWK+lRw5t8QGi3UE2gTLX3K4KqjC3/1gUahtW/6VbL5yV7SsRwc4fMHhgRX/kakDqHAL20aZ5xo/4PhQAItwsJrylqZB65pLF33PD65oHv9tLUdB82hRIBgheFA3+mPhgl0Mz/ZnVTre9qu/SVSCJMFuzolO469042qJBhJgq9m8ZyZ766BhdkuNPWccvBFl3nYNTiuXyujkl+isWGknFDlbDofsOUtsxL7Ipi1Yzog5hCaZ3QwxpKhpyXV98ujoMiOeABqEePB/ZRVycWe9pnM3JqIytmnOToPTagsgKy8SiT64xQUHfYV9U7dJ6l3URkoAA909eF2GJ+FftoQIPjRcMMTZT4ZicLNU1x1TQ87EM3XSROTASMirqqctYr+bT9Oh6F5yB6kMu5uQuKeLH/huMPUCZ49JlatOMTadXGCiLSkVfQmg1yUmJpNHDc=
   on:
     branch: master
     tags: true
