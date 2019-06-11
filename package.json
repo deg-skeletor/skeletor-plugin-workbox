@@ -1,6 +1,6 @@
 {
     "name": "@deg-skeletor/plugin-workbox",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A Skeletor plugin to configure and generate service workers.",
     "main": "index.js",
     "scripts": {
